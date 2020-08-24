@@ -1,0 +1,14 @@
+.user-info__change {
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .2s ease-in-out;
+}
+
+.user-info__change:hover {
+    opacity: 1;
+}

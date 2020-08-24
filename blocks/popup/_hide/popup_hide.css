@@ -1,0 +1,4 @@
+.popup.popup_hide {
+    /* display: flex; */
+    opacity: 0;
+}

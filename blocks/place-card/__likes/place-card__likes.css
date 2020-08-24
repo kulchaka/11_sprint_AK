@@ -1,0 +1,6 @@
+.place-card__likes {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
