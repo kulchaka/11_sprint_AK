@@ -1,10 +1,11 @@
 //??-----------------------Impots JS---------------------------
-import Api from './Api.js';
-import Card from './Card.js';
-import CardList from './CardList.js';
-import FormValidator from './FormValidator.js';
-import Popup from './Popup.js';
-import UserInfo from './UserInfo.js';
+import Api from './Api';
+import Card from './Card';
+import CardList from './CardList';
+import FormValidator from './FormValidator';
+import Popup from './Popup';
+import UserInfo from './UserInfo';
+import '../pages/index.css'
 
 //??-----------------------Values---------------------------
 const placesList = document.querySelector('.places-list');
