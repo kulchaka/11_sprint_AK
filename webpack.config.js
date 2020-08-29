@@ -7,9 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-// подключаем плагин
-const isDev = process.env.NODE_ENV === 'development' ? 'http://praktikum.tk/cohort2' : 'https://praktikum.tk/cohort2';
-// const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort2' : 'https://praktikum.tk/cohort2';
+const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: path.resolve(__dirname, 'src/js/script.js'),

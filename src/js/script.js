@@ -47,10 +47,12 @@ const headers = {
   authorization: '7390d4ed-f62e-4546-96f8-a025e7f7b13e',
 };
 
-const apiCards = new Api('https://nomoreparties.co/cohort12/cards', headers);
+const serverUrl = NODE_ENV === 'development' ? 'http://nomoreparties.co/cohort12/' : 'https://nomoreparties.co/cohort12/';
+
+const apiCards = new Api(`${serverUrl}cards`, headers);
 
 //?? - UserInfo
-const apiUser = new Api('https://nomoreparties.co/cohort12/users/me', headers);
+const apiUser = new Api(`${serverUrl}users/me`, headers);
 
 
 //!!------------------------
