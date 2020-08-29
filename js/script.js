@@ -1,11 +1,10 @@
 //??-----------------------Impots JS---------------------------
-import Api from './Api';
-import Card from './Card';
-import CardList from './CardList';
-import FormValidator from './FormValidator';
-import Popup from './Popup';
-import UserInfo from './UserInfo';
-import '../pages/index.css'
+import Api from './Api.js';
+import Card from './Card.js';
+import CardList from './CardList.js';
+import FormValidator from './FormValidator.js';
+import Popup from './Popup.js';
+import UserInfo from './UserInfo.js';
 
 //??-----------------------Values---------------------------
 const placesList = document.querySelector('.places-list');
@@ -47,12 +46,10 @@ const headers = {
   authorization: '7390d4ed-f62e-4546-96f8-a025e7f7b13e',
 };
 
-const serverUrl = NODE_ENV === 'development' ? 'http://nomoreparties.co/cohort12/' : 'https://nomoreparties.co/cohort12/';
-
-const apiCards = new Api(`${serverUrl}cards`, headers);
+const apiCards = new Api('https://nomoreparties.co/cohort12/cards', headers);
 
 //?? - UserInfo
-const apiUser = new Api(`${serverUrl}users/me`, headers);
+const apiUser = new Api('https://nomoreparties.co/cohort12/users/me', headers);
 
 
 //!!------------------------

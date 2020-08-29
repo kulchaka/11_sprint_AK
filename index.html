@@ -4,17 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
     <title>Mesto</title>
   </head>
   <body>
     <div class="root">
       <header class="header root__section">
-        <img
-          src="<%=require('./images/logo.svg')%>"
-          alt="mesto logo"
-          class="logo"
-        />
+        <img src="./images/logo.svg" alt="mesto logo" class="logo" />
       </header>
       <div class="profile root__section">
         <div class="user-info">
@@ -32,7 +29,9 @@
               Edit
             </button>
           </div>
-          <button data-id="popup" class="button user-info__button">+</button>
+          <button data-id="popup" class="button user-info__button">
+            +
+          </button>
         </div>
       </div>
       <div class="places-list root__section">
@@ -53,7 +52,7 @@
         <div class="popup-avatar__content">
           <img
             data-id="popup-avatar"
-            src="<%=require('./images/close.svg')%>"
+            src="./images/close.svg"
             alt=""
             class="popup-avatar__close"
           />
@@ -196,5 +195,6 @@
         </div>
       </div>
     </div>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>
